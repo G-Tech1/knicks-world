@@ -14,9 +14,13 @@ const { Title, Text } = Typography;
 
 const Navbar = () => {
   return (
-    <div>
-      <div>
-        <Avatar src={icon} size="large" />
+    <div className="nav-container">
+      <div className="logo-container">
+        <img
+          style={{ maxHeight: '100px', maxWidth: '100px' }}
+          src={icon}
+          alt="knicks-logo"
+        />
         <Title level={2}>
           <Link to="/">Knicks World</Link>
         </Title>
